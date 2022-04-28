@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <img class="layer-1"src="IMG/background.png" alt="">
+        <img class="layer-2"src="IMG/meteor.png" alt="">
+        <div class="layer-3">
+            <h1>Hello &amp; wellcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita ex asperiores quam ipsam eos quos impedit, molestias debitis magnam esse velit non culpa, eius maxime fugit atque iste id.</p>
+            <a href="#jony">Get started</a>
+        </div>
+        <img class="layer-4"src="IMG/4.png" alt="">
+        <img class="layer-5"src="IMG/5.png" alt="">
+        <img src="IMG/6.png" alt="">
+    </div>
+    <div class="content" id="jony">
+        <h1>Parallax effect</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui laudantium ratione laboriosam commodi libero! Sapiente est libero dignissimos atque laborum magni aliquam facilis! Id culpa necessitatibus voluptatibus nisi asperiores provident, molestiae libero quos autem assumenda possimus at corrupti, architecto atque officiis magnam dolores odio rem omnis doloremque. Tenetur, eligendi consectetur ullam aperiam voluptate perspiciatis voluptatum rerum maiores temporibus vitae sequi illo repellat iure aliquid? Dolorem nesciunt laboriosam assumenda veritatis ratione similique ut ea dicta, obcaecati libero illo excepturi magni voluptatum ipsam voluptatibus corporis repellendus, deleniti dolores, nemo ad. Error, quas!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, ratione omnis inventore illo unde quam. Ea assumenda dolor, quibusdam ipsum voluptatum nobis suscipit modi magni veniam facere aspernatur! Totam optio cum magnam, hic modi dolore iste provident tempora praesentium ullam quaerat, ea voluptates nobis nostrum esse eaque tenetur non vel possimus quidem nisi beatae? Aliquam alias laboriosam quo facere itaque, culpa recusandae et velit repudiandae neque mollitia qui, exercitationem aperiam dolorum maiores minima repellendus iste at numquam dicta quos explicabo. Nobis amet ullam temporibus facilis! Facilis esse iste, eum deserunt commodi deleniti quae officiis et quod quasi ex, doloremque ratione nam maiores eaque neque eos ab voluptas nostrum similique animi facere asperiores totam. Nostrum, cumque minus molestiae in officia inventore!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo voluptatum, quae in ipsam laudantium molestias obcaecati sint maxime quidem sapiente aliquid unde quasi doloremque dicta quam deleniti odit dolorem? Necessitatibus aperiam ducimus itaque consequuntur ratione dolores cupiditate maxime libero est! Facilis distinctio iure, accusantium consequuntur excepturi voluptatum? Deserunt repellendus voluptatibus error alias numquam officia ducimus facilis sequi laboriosam aperiam, reprehenderit voluptates eos vel quae! Quam minima vitae repudiandae, at dignissimos praesentium tenetur, ea, possimus explicabo voluptatem fugit incidunt consequatur.</p>
+    </div>
+<script type="text/javascript">
+
+    let layer_1 = document.querySelector('.layer-1');
+    let layer_2 = document.querySelector('.layer-2');
+    let layer_3 = document.querySelector('.layer-3');
+    let layer_4 = document.querySelector('.layer-4');
+    let layer_5 = document.querySelector('.layer-5');
+
+    window.onscroll = function(){
+        let Y = window.scrollY;
+        layer_1.style.transform = 'translateY('+Y/1.5 +'px)';
+        layer_2.style.transform = 'translateY('+Y/2 +'px)';
+        layer_3.style.transform = 'translateY('+Y/1.5 +'px)';
+        layer_4.style.transform = 'translateY('+Y/2 +'px)';
+        layer_5.style.transform = 'translateY('+Y/3 +'px)';
+
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
